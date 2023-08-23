@@ -1,3 +1,15 @@
+antlr3 (3.5.3-1) unstable; urgency=medium
+
+  * New upstream release
+    - Refreshed the patches
+    - Updated the Maven rules
+  * Removed the antlr3-doc and libantlr3-gunit-java-doc packages
+  * Added the debian/clean to simplify the clean target of debian/rules
+  * Standards-Version updated to 4.6.1
+  * Use salsa.debian.org Vcs-* URLs
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 12 Dec 2022 23:39:22 +0100
+
 antlr3 (3.5.2-9) unstable; urgency=medium
 
   * Team upload.
