@@ -13,10 +13,13 @@
 # and version starting with 3., this dependency is then removed
 # from the POM
 #   junit junit jar s/3\..*/3.x/
+io.takari.maven.plugins takari-plugin-testing *
 org.antlr gunit jar *
 org.antlr maven-gunit-plugin maven-plugin *
 org.apache.maven.plugins maven-assembly-plugin maven-plugin *
+org.apache.maven.plugins maven-enforcer-plugin *
 org.apache.maven.plugins maven-gpg-plugin *
+org.apache.maven.plugins maven-javadoc-plugin *
 org.apache.maven.plugins maven-project-info-reports-plugin maven-plugin *
 org.apache.maven.plugins maven-release-plugin *
 org.apache.maven.plugins maven-site-plugin maven-plugin *

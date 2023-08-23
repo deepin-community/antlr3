@@ -1,0 +1,10 @@
+antlr3-maven-plugin/target
+gunit/target
+gunit-maven-plugin/target
+tool/target
+target
+runtime/Java/target
+tool/src/main/java/*.tokens
+tool/src/main/java/org/antlr/grammar/v3
+antlr-ant/main/antlr3-task/antlr3-task.jar
+antlr-ant/main/antlr3-task/antlr3-src/org/apache/tools/ant/antlr/*.class

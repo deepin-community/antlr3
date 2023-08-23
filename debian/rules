@@ -8,7 +8,6 @@ include /usr/share/cdbs/1/class/maven.mk
 
 DEB_MAVEN_INSTALL_TO_USJ := false
 DEB_MAVEN_BUILD_TARGET := package install
-DEB_MAVEN_DOC_TARGET := generate-sources javadoc:jar javadoc:aggregate
 PACKAGE              := $(DEB_SOURCE_PACKAGE)
 VERSION              := $(shell echo $(DEB_UPSTREAM_VERSION) | cut -d'+' -f1 -)
 JAVA_HOME            := /usr/lib/jvm/default-java
@@ -51,15 +50,3 @@ binary-post-install/antlr3::
 
 clean::
 	mh_clean
-	rm -Rf antlr3-maven-plugin/target
-	rm -Rf gunit/target
-	rm -Rf gunit-maven-plugin/target
-	rm -Rf tool/target
-	rm -Rf target
-	rm -Rf runtime/Java/target
-	rm -rf tool/src/main/java/*.tokens
-	rm -rf tool/src/main/java/org/antlr/grammar/v3
-	rm -f antlr-ant/main/antlr3-task/antlr3-task.jar antlr-ant/main/antlr3-task/antlr3-src/org/apache/tools/ant/antlr/*.class
-
-get-orig-source:
-	-uscan --download-version $(DEB_UPSTREAM_VERSION) --force-download --rename --repack
